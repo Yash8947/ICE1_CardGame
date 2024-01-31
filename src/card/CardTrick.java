@@ -45,6 +45,11 @@ public class CardTrick {
         Card userCard = new Card();
         userCard.setValue(userValue);
         userCard.setSuit(userSuit);
+
+        // Adding a hard-coded lucky card
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); // Set value to 7
+        luckyCard.setSuit("Hearts"); // Set suit to Hearts
         
         // Searching magicHand for the user's card
         boolean found = false;
